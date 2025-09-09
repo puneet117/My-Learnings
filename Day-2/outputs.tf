@@ -1,3 +1,5 @@
+#Outputs for count
+
 # output "ec2_public_ip" {
 #   value       = aws_instance.web[*].public_ip
 #   description = "Public IP of the EC2 instance"
@@ -14,6 +16,7 @@
 
 # }
 
+#Outputs for for_each
 output "ec2_public_ip" {
   value = [ for instance in aws_instance.web : instance.public_ip ]
   description = "Public IPs of the EC2 instances"
