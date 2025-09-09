@@ -39,3 +39,5 @@ terraform.rc
 #Ignore generated SSH keys
 Day-2/terraform-tws-key
 Day-2/terraform-tws-key.pub
+Day-3/terraform-tws-key
+Day-3/terraform-tws-key.pub
